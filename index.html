@@ -1,48 +1,102 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Infolca</title>
-  </head>
-  <body>
-    <div class="barra-gris">
-      <div class="div-padre">
-        <div class="telefono-icono">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            fill="currentColor"
-            class="w-6 h-6"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M12 2.25c-2.429 0-4.817.178-7.152.521C2.87 3.061 1.5 4.795 1.5 6.741v6.018c0 1.946 1.37 3.68 3.348 3.97.877.129 1.761.234 2.652.316V21a.75.75 0 001.28.53l4.184-4.183a.39.39 0 01.266-.112c2.006-.05 3.982-.22 5.922-.506 1.978-.29 3.348-2.023 3.348-3.97V6.741c0-1.947-1.37-3.68-3.348-3.97A49.145 49.145 0 0012 2.25zM8.25 8.625a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25zm2.625 1.125a1.125 1.125 0 112.25 0 1.125 1.125 0 01-2.25 0zm4.875-1.125a1.125 1.125 0 100 2.25 1.125 1.125 0 000-2.25z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <div class="texto-barra telefono-texto">
-          Atención al cliente: +00 000-00000000
-        </div>
-      </div>
-    </div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Infolca</title>
+		<!-- CUSTOM CSS -->
+        <link rel="stylesheet" href="./public/css/styles.css" />
+		<!-- FONTS -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
 
-    <a href="#">Infolca</a>
+            <!-- HEADER TOP -->
+            <div class="header-position d-flex m-width header-top">
+				<p class="header-top__text">📞 Customer Service <span class="header-top-left__text__phone">+00 000-00000000</span></p>
+            </div>
 
-    <div class="barra-gris-menu">
-      <ul class="nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Motor</a></li>
-        <li><a href="#">Contactos</a></li>
-      </ul>
-    </div>
-  </body>
+            <!-- HEADER CENTER  -->
+            <div class="header-position d-flex m-width header-center">
+				<div class="header-position-left header-center-title">
+					<h1 class="header-center-title__text">Infolca</h1>
+					<span class="header-center-title__paragrapt">Parte de motores</span>
+				</div>
+				<div class="header-position-left header-center-search d-flex">
+					<div class="header-center-search__icon">
+						<img class="header-center-search__icon__img m-width" src="./public/img/search.svg" alt="image-search">
+					</div>
+					<input class="header-center-search__icon__input" type="text" name="search" id="search-product" placeholder="Search by part, Number, Category">
+				</div>
+            </div>
+
+            <!-- HEADER END  -->
+            <div class="header-position m-width d-flex header-end">
+				<nav class="header-end-nav">
+					<ul class="header-end-nav-items">
+						<li class="header-end-nav-items__list">
+							<a class="header-end-nav-items__list__link" href="index.html">HOME</a>
+						</li>
+						<li class="header-end-nav-items__list">
+							<a class="header-end-nav-items__list__link prueba" href="#">ENGINES <img src="./public/img/arrow-down.svg"/></a>
+							<ul class="nav-sub-menu d-flex">
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Caterpillar</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Cummins</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Detroit Diesel</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">John Deere</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Mercedes Benz</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">International/Navistar</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Komatsu</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Kubota</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Yanmar</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Mitsubishi</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Gauges</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Oil Seals & Bearings</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Marine Pumps</a>
+								</li>
+								<li class="nav-sub-menu__list">
+									<a class="nav-sub-menu__list__link" href="#">Marine Control Parts</a>
+								</li>
+							</ul>
+						</li>
+						<li class="header-end-nav-items__list">
+							<a class="header-end-nav-items__list__link" href="#">AFFILIATES</a>
+						</li>
+						<li class="header-end-nav-items__list">
+							<a class="header-end-nav-items__list__link" href="#">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+        </header>
+    </body>
 </html>
