@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  position: relative;
+  box-shadow: inset 0 0 0 0 rgb(79, 79, 80);
+  color: rgb(79, 79, 80);
+  padding: 0.10rem 1rem;
+  margin: 10px;
+  margin-left: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out, transform .3s ease-in-out; /* Agregamos transform a la transición */
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+a::after {
+  content: "Repuestos de motor";
+  position: absolute;
+  bottom: 12px;
+  left: 18px;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+a:hover {
+  color: #ffffff;
+  box-shadow: inset 300px 0 0 0 rgb(79, 79, 80);
+  transform: translateY(-40px);
+  transform: translateX(-10px); /* Movemos el texto hacia arriba al hacer hover */
+}
+
+a:hover::after {
+  opacity: 1;
+}
+
+.nav {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: 600;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all .35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: .5em 1em;
+}
+
+.nav a {
+  padding: .5em .8em;
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav a::before,
+.nav a::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+  transform: translate(-100%, 10%);
+}
+
+.nav a:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #ffffff;
+  border-left: 3px solid #ffffff;
+  transform: translate(100%, -50%)
+}
+
+.nav a:hover:before,
+.nav a:hover:after{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+.nav a:hover {
+  color: #3DA35D;
+}
+
+.barra-gris {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+  background-color: rgb(57, 57, 58);
+  padding: 0 15px;
+  font-size: smaller;
+}
+
+.div-padre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.telefono-icono svg {
+  width: 20px;
+  height: 20px;
+  color: white;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.texto-barra {
+  color: white;
+  font-weight: bold;
+  margin-left: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: smaller;
+}
+
+.barra-gris-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  background-color: rgb(85, 85, 85);
+  padding: 0 15px;
+  margin-top: 0px;
+  font-size: smaller;
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media (max-width: 768px) {
+  .barra-gris {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    background-color: rgb(79, 79, 80);
+    padding: 0 15;
+    padding-right: 0px;
+  }
+  
+  .telefono-icono svg {
+    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-right: 6px;
+  }
+
+  .div-padre {
+    margin-left: -8px;
+    margin-top: -1px;
+    font-size: xx-small;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .texto-barra {
+    font-size: xx-small;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: center;
+  }
+}
+
